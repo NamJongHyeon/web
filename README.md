@@ -1,3 +1,1 @@
-# web
-
-## 2021-여름 DA 시니어플젝 Web page
+# 2021-여름 YBIGTA DA 시니어플젝 Web page

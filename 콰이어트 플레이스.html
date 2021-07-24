@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>콰이어트플레이스2</title>
+        <!-- Bootstrap -->
+        <link href="./bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <!-- Animate.css -->
+        <link href="./animate.css/animate.css" rel="stylesheet" type="text/css" />
+        <!-- Font Awesome iconic font -->
+        <link href="./fontawesome/css/fontawesome-all.css" rel="stylesheet" type="text/css" />
+        <!-- Magnific Popup -->
+        <link href="./magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
+        <!-- Slick carousel -->
+        <link href="./slick/slick.css" rel="stylesheet" type="text/css" />
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Oswald:300,400,500,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+        <!-- Theme styles --><div class="sidebar section-long order-lg-last">
+        <link href="./css/dot-icons.css" rel="stylesheet" type="text/css">
+        <link href="./css/theme.css" rel="stylesheet" type="text/css">
+
+        <!--txt슬라이드효과-->
+        <link rel="stylesheet" href="./css/HOME.css">
+        <link rel="stylesheet" href="./css/slick.css">
+
+        <link href="assets/img/favicon.png" rel="icon">
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        
+        <script src="./js/jquery-3.3.1.min2.js"></script>
+        <script src="./js/slick.min.js"></script>
+        <script src="./js/HOME.js"></script>
+    </head>
+    
+    <body class="body">
+        <header class="header header-horizontal header-view-pannel">
+            <div class="container">
+                <nav class="navbar">
+                    <a class="navbar-brand" href="./main.html">
+                        <span class="logo-element">
+                            <span class="logo-tape">
+                                <span class="svg-content svg-fill-theme" data-svg="./images/svg/logo-part.svg"></span>
+                            </span>
+                            <span class="logo-text text-uppercase">
+                                <span>DA</span>YBIGTA</span>
+                        </span>
+                    </a>
+                    
+                    
+                        <div class="navbar-extra">
+                            <a class="btn-theme btn" href="http://www.cgv.co.kr/ticket/"><i class="fas fa-ticket-alt"></i>&nbsp;&nbsp;Buy Ticket</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="after-head d-flex section-text-white position-relative">
+            <div class="d-background" data-image-src="data:image/jpeg;base64,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" data-parallax="scroll"></div>
+            <div class="d-background bg-black-80"></div>
+            <div class="top-block top-inner container">
+                <div class="top-block-content">
+                    <h1 class="section-title">Movies Info</h1>
+                    <div class="page-breadcrumbs">
+                        <a class="content-link" href="./main.html">Home</a>
+                        <span class="text-theme mx-2"><i class="fas fa-chevron-right"></i></span>
+                        <a class="content-link" href="movies-blocks.html">Movies</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="sidebar-container">
+                <div class="content">
+                    <section class="section-long">
+                        <div class="section-line">
+                            <div class="movie-info-entity">
+                                <div class="entity-poster" data-role="hover-wrap">
+                                    <div class="embed-responsive embed-responsive-poster">
+                                        <img class="embed-responsive-item" src="./images/movie_image/콰이어트플레이스2.jpg" alt="" />
+                                    </div>
+                                    <div class="d-over bg-theme-lighted collapse animated faster" data-show-class="fadeIn show" data-hide-class="fadeOut show">
+                                        <div class="entity-play">
+                                            <a class="action-icon-theme action-icon-bordered rounded-circle" href="https://www.youtube.com/watch?v=iVpCsTBH5WY" data-magnific-popup="iframe">
+                                                <span class="icon-content"><i class="fas fa-play"></i></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="entity-content">
+                                    <h2 class="entity-title">콰이어트플레이스2</h2>
+                                    <div class="entity-category">
+                                        <a class="content-link" href="movies-blocks.html">HORROR</a>,
+                                        <a class="content-link" href="movies-blocks.html">thriller</a>
+                                    </div>
+                                    <div class="entity-info">
+                                        <div class="info-lines">
+                                            <div class="info info-short">
+                                                <span class="text-theme info-icon"><i class="fas fa-star"></i></span>
+                                                <span class="info-text">8.77</span>
+                                                <span class="info-rest">/10</span>
+                                            </div>
+                                            <div class="info info-short">
+                                                <span class="text-theme info-icon"><i class="fas fa-clock"></i></span>
+                                                <span class="info-text">97</span>
+                                                <span class="info-rest">&nbsp;min</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="entity-list">
+                                        <li>
+                                            <span class="entity-list-title">Release:</span>June 16, 2021</li>
+                                        <li>
+                                            <span class="entity-list-title">Directed:</span>
+                                            <a class="content-link" href="#">John Krasinski</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-line">
+                            <div class="section-head">
+                                <h2 class="section-title text-uppercase">Synopsis</h2>
+                            </div>
+                            <div class="section-description">
+                                <p class="lead">소리 없이 맞서 싸워라!<br><br>
+                                    
+                                    실체를 알 수 없는 괴생명체의 공격으로 일상의 모든 것이 사라진 세상,<br>
+                                    아이들 대신 죽음을 선택한 아빠의 희생 이후 살아남은 가족들은 위험에 노출된다.<br><br>
+                                    갓 태어난 막내를 포함한 아이들과 함께 소리 없는 사투를 이어가던 엄마 ‘에블린’은<br>
+                                    살아남기 위해 새로운 은신처를 찾아 집 밖을 나서지만,<br>
+                                    텅 빈 고요함으로 가득한 바깥은 더 큰 위험이 도사리고 있는데...
+                                   </p>
+                            </div>
+                        </div>
+
+                        <div class="section-line">
+                            <div class="section-head">
+                                <h2 class="section-title text-uppercase">Movie Keyword</h2>
+                            </div>
+                            <div>
+                            <center>
+                                <img class="" src="./images/wordcloud/콰이어트플레이스.png" width="" height=""/>
+                                <!--insidious_wordcloud-removebg-preview-->
+                            </center>
+                            </div>
+                            
+                        </div>
+
+                        <div class="section-line">
+                            <div class="section-head">
+                                <h2 class="section-title text-uppercase">Comments</h2>
+                            </div>
+                            <div class="comment-entity">
+                                <div class="entity-inner">
+                                    <div class="entity-content">
+                                        <h4 class="entity-title">GOOD👍🏻</h4>
+                                        <section class="visual">
+                                            <ul class="slide">
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">저는 개인적으로 편보다 더 재미있었어요 배우분들 연기는 물론이고 그냥 다 십점만점입니당 보는내내 심장 잡고 봤어요 특히 딸 인칭 시점 나올때 어떡해라는 말이 절로 나올정도로 몰입했어요 추천합니다 강추 띵작 
+
+ 
+
+
+
+ 
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">꿀잼 너무 재밌어서 영화관에서 보고 집에서 도 봤어요 완전 강추합니다 
+
+
+
+
+
+
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">편 못보고 편 봤지만 너무너무 재미있었어요오랜만에 너무재밌는영화봐서 기분좋았습니다 ㅎㅎ 
+
+
+
+
+
+
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">와 진짜 여름 영화다 빨리 다들 가서 보세요 너무 쫀득쫀득하다 너무 재밌어 흑 ㅠㅠㅠ 
+
+
+
+
+
+
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">편을 처음 봤을 때와 같은 신선함은 덜하지만 더 스펙타클하고 아이들의 성장기가 엿보여서 너무 좋았음 강추 
+
+
+
+
+
+ 
+
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">진짜 꼭 극장에서 봐야하는 영화 몰입감 최고에요 
+
+
+
+
+
+
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">오 근래본 영화중에 최고넘재밋게 봣어요 
+
+
+
+
+
+
+
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">편보고 편봤더니 훨 재밌었어용 배우들 연기가 장난아녔어요임신중인데 보러갔는데 조금 깜짝 놀라는 장면두 있었굴 아무튼 두말필요없이 넘 잘봤어여 굿굿 
+
+
+
+
+
+
+
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">너무 긴장해서 어깨가 아플정도지만 진짜 너무 재밌다  편보다 더 재밌어 ㅠㅠ 편도 기대된다 
+
+
+
+
+
+
+ 
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">보통 편이 너무 인상적이라 후속작들이 뭍혀버리는데 이건 엔딩보자마자 편 기다려질 만큼 매우 재밌음 강추 
+
+
+
+
+
+
+ 
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </div>
+
+
+                                    <div class="entity-extra">
+                                        <div class="grid-md row">
+                                            <div class="col-12 col-sm-auto">
+                                                <div class="entity-rating">
+                                                    <span class="entity-rating-icon text-theme"><i class="fas fa-star"></i></span>
+                                                    <span class="entity-rating-icon text-theme"><i class="fas fa-star"></i></span>
+                                                    <span class="entity-rating-icon text-theme"><i class="fas fa-star"></i></span>
+                                                    <span class="entity-rating-icon text-theme"><i class="fas fa-star"></i></span>
+                                                    <span class="entity-rating-icon text-theme"><i class="fas fa-star"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="ml-sm-auto col-auto">
+                                                <a class="content-link" href="#"><i class="fas fa-reply"></i>&nbsp;&nbsp;reply</a>
+                                            </div>
+                                            <div class="col-auto">
+                                                <a class="content-link" href="#"><i class="fas fa-quote-left"></i>&nbsp;&nbsp;quote</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="comment-entity">
+                                <div class="entity-inner">
+                                    <div class="entity-content">
+                                        <h4 class="entity-title">BAD👎🏻</h4>
+                                        <section class="visual">
+                                            <ul class="slide">
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">최악임 여기서 왜 끝나 
+
+
+
+
+
+
+
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">최악의 영화였음 개연성은 어디너무 억지 긴장감 제로입니다 
+
+
+
+
+
+
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">초반은 참 맘에 들었는데   이건 갈수록  개판이네 
+
+
+
+
+
+
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">ㅈㄴ재미없음 ㅅㅂ 이런걸 돈주고 보는 내가 ㅂㅅ이다 
+
+
+
+
+
+
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">역대급 노잼이고 너무 졸려요 친구랑 둘이 봤는데 둘다 끝나고서 재미없다고 하더라고요 돈 아까움 
+
+
+
+
+
+
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">내생에 이렇게 재미없는 영화는 처음이다스토리도없고 긴장감도없고 결말은 허무하다기대잔뜩하고갔는데 돈시간만 버리고왔다재밌다는 사람들은 다 알바들인가 
+
+
+
+
+
+
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">시간이 아까운 급 쓰레기 영화임 
+
+
+
+
+
+
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">진짜 돈 존나 아깝다 ㅋㅋㅋㅋ영화 보는 내내 암걸려 것 같았는데 영화내용은 원짜리 예고편임 
+
+
+
+
+
+
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">노잼입니다 제발 보지마세요 
+
+
+
+
+
+
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="num en_1">
+                                                        <span>
+                                                            <p class="entity-subtext">어우평점이 왜이렇게높죠너무지루했습니다 
+
+
+
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                    <div class="entity-extra">
+                                        <div class="grid-md row">
+                                            <div class="col-12 col-sm-auto">
+                                                <div class="entity-rating">
+                                                    <span class="entity-rating-icon text-theme"><i class="fas fa-star"></i></span>
+                                                    <span class="entity-rating-icon"><i class="fas fa-star"></i></span>
+                                                    <span class="entity-rating-icon"><i class="fas fa-star"></i></span>
+                                                    <span class="entity-rating-icon"><i class="fas fa-star"></i></span>
+                                                    <span class="entity-rating-icon"><i class="fas fa-star"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="ml-sm-auto col-auto">
+                                                <a class="content-link" href="#"><i class="fas fa-reply"></i>&nbsp;&nbsp;reply</a>
+                                            </div>
+                                            <div class="col-auto">
+                                                <a class="content-link" href="#"><i class="fas fa-quote-left"></i>&nbsp;&nbsp;quote</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </section>
+                </div>                
+            </div>
+        </div>
+        <a class="scroll-top disabled" href="#"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
+        
+        <!-- jQuery library -->
+        <script src="./js/jquery-3.3.1.js"></script>
+        <!-- Bootstrap -->
+        <script src="./bootstrap/js/bootstrap.js"></script>
+        <!-- Paralax.js -->
+        <script src="./parallax.js/parallax.js"></script>
+        <!-- Waypoints -->
+        <script src="./waypoints/jquery.waypoints.min.js"></script>
+        <!-- Slick carousel -->
+        <script src="./slick/slick.min.js"></script>
+        <!-- Magnific Popup -->
+        <script src="./magnific-popup/jquery.magnific-popup.min.js"></script>
+        <!-- Inits product scripts -->
+        <script src="./js/script.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ4Qy67ZAILavdLyYV2ZwlShd0VAqzRXA&callback=initMap"></script>
+        <script async defer src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js"></script>
+    </body>
+</html>
